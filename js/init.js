@@ -15,14 +15,12 @@ function getData(){
 
         markerData.push(marker);
 
-        console.log(markerData[0]);
+        
       }
+      console.log(markerData[0]);
+      return markerData;
     }
-  });
-
-  console.log(markerData[0]);
-  
-  return markerData;
+  });  
 }
 
 function initMap(){
