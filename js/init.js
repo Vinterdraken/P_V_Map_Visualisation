@@ -29,7 +29,7 @@ function getData(){
   return markerData;
 }
 
-/*function initMap() {
+function initMap(){
 
   var markerData = new Array();
   markerData = getData();
@@ -66,18 +66,5 @@ function getData(){
     map: map
   });
 }
-*/
 
-$(document).ready(function(){
 
-  var markerData;
-  markerData = getData();
-
-  var smallIsles = {lat: 56.988553, lng: -6.451959};
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    center: smallIsles
-  });
-
-})
