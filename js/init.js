@@ -17,6 +17,9 @@ function getData(){
       }
     }
   });
+
+  console.log(markerData[0]);
+  console.log(markerData[0].Lat);
   
   return markerData;
 }
@@ -34,7 +37,7 @@ function initMap(){
   markerData = getData();
 
 
-  console.log(markerData.[0]);
+  console.log(markerData);
 
   var markerArray = new Array();
 
