@@ -35,10 +35,7 @@ function initMap(){
   var markerData;
   markerData = getData();
 
-  /*console.log(markerData);*/
-
-  console.log(getData());
-  console.log(getData()[0]);
+  console.log(markerData.0.Lat);
 
   var markerArray = new Array();
 
