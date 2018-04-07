@@ -32,12 +32,14 @@ function initMap(){
     center: smallIsles
   });
 
-  /*var markerData;
+  var markerData;
   markerData = getData();
 
-  console.log(markerData);*/
+  /*console.log(markerData);*/
 
   console.log(getData());
+  console.log(getData()[0]);
+  console.log(getData().[0]);
 
   var markerArray = new Array();
 
