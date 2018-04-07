@@ -20,12 +20,10 @@ function getData(){
     }
   });
 
-  
   //console.log(markerData[0].positionLat);
   //console.log(markerData[1].positionLng);
   //console.log(markerData[2].average);
   
-
   return markerData;
 }
 
@@ -41,30 +39,14 @@ function initMap(){
     center: smallIsles
   });
 
-  var marker1 = new google.maps.Marker({
-    position: {lat: markerData[0].positionLat, lng: markerData[0].positionLng},
-    map: map
-  });
+  var markerArray = new Array();
 
-  var marker2 = new google.maps.Marker({
-    position: {lat: markerData[1].positionLat, lng: markerData[1].positionLng},
-    map: map
-  });
-
-  var marker3 = new google.maps.Marker({
-    position: {lat: markerData[2].positionLat, lng: markerData[2].positionLng},
-    map: map
-  });
-
-  var marker4 = new google.maps.Marker({
-    position: {lat: markerData[3].positionLat, lng: markerData[3].positionLng},
-    map: map
-  });
-
-  var marker5 = new google.maps.Marker({
-    position: {lat: markerData[4].positionLat, lng: markerData[4].positionLng},
-    map: map
-  });
+  for(var i in markerData){
+    markerArray[i] = new google.maps.Marker({
+      position: {lat: markerData[i].positionLat, lng: markerData[i].positionLng},
+      map: map
+    });
+  }
 }
 
 
