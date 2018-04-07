@@ -6,6 +6,7 @@ function getData(){
   $.ajax({
     type: "GET",
     url: "json/generalData.json",
+    dataType: "json",
     success: function(result){
 
       console.log(result);
@@ -30,7 +31,7 @@ function getData(){
 function initMap(){
 
   var markerData = new Array();
-  markerData = getData();
+  //markerData = getData();
 
   var smallIsles = {lat: 56.988553, lng: -6.451959};
 
