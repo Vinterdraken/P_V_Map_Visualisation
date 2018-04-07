@@ -9,10 +9,11 @@ function getData(){
     dataType: "json",
     success: function(result){
 
-      console.log(result.Data[1].positionLat);
-
       for(var i in result.Data){
         console.log(result.Data[i].positionLat);
+        console.log(result.Data[i].positionLng);
+        console.log(result.Data[i].burrowsAverage);
+        console.log("----------------------------");
       }
     }
   });
