@@ -39,7 +39,6 @@ function initMap(){
 
   console.log(getData());
   console.log(getData()[0]);
-  console.log(getData().[0]);
 
   var markerArray = new Array();
 
