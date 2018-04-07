@@ -13,11 +13,6 @@ function getData(){
         
         var marker = { Lat: result.Data[i].positionLat, Lng: result.Data[i].positionLng, average: result.Data[i].burrowsAverage };
 
-        console.log(marker.Lat);
-        console.log(marker.Lng);
-        console.log(marker.average);
-        console.log("----------------------------");
-
         markerData.push(marker);
       }
     }
@@ -44,10 +39,13 @@ function initMap(){
   var markerArray = new Array();
 
   for(var i in markerData){
-    markerArray[i] = new google.maps.Marker({
+
+    var marker = new google.maps.Marker({
       position: {lat: markerData[i].Lat, lng: markerData[i].Lng},
       map: map
     });
+
+    markerArray.push(marker);
   }
 }
 
