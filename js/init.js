@@ -20,9 +20,9 @@ function getData(){
     }
   });
 
-  //console.log(markerData[0].positionLat);
-  //console.log(markerData[1].positionLng);
-  //console.log(markerData[2].average);
+  console.log(markerData[0].positionLat);
+  console.log(markerData[1].positionLng);
+  console.log(markerData[2].average);
   
   return markerData;
 }
