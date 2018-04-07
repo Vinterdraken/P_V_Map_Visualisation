@@ -10,12 +10,13 @@ function getData(){
     success: function(result){
 
       for(var i in result.Data){
-        console.log(result.Data[i].positionLat);
-        console.log(result.Data[i].positionLng);
-        console.log(result.Data[i].burrowsAverage);
-        console.log("----------------------------");
-
+        
         var marker = { Lat: result.Data[i].positionLat, Lng: result.Data[i].positionLng, average: result.Data[i].burrowsAverage };
+
+        console.log(marker.Lat);
+        console.log(marker.Lng);
+        console.log(marker.average);
+        console.log("----------------------------");
 
         markerData.push(marker);
       }
@@ -36,6 +37,9 @@ function initMap(){
 
   var markerData = new Array();
   markerData = getData();
+
+
+  console.log(markerData);
 
   var markerArray = new Array();
 
