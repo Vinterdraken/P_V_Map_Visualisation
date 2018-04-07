@@ -9,7 +9,7 @@ function getData(){
     dataType: "json",
     success: function(result){
 
-      console.log(result);
+      console.log(result.Data);
 
       for(var i in result.Data){
         markerData.push({
@@ -21,9 +21,9 @@ function getData(){
     }
   });
 
-  console.log(markerData[0].positionLat);
-  console.log(markerData[1].positionLng);
-  console.log(markerData[2].average);
+  console.log(markerData[0].positionLat.value);
+  console.log(markerData[1].positionLng.value);
+  console.log(markerData[2].average.value);
   
   return markerData;
 }
@@ -39,7 +39,7 @@ function initMap(){
 
   var markerData = new Array();
   markerData = getData();
-  
+
   var markerArray = new Array();
 
   for(var i in markerData){
