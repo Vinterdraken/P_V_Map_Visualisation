@@ -34,11 +34,13 @@ function initMap(){
   markerData = getData();
 
 
-  console.log(markerData[0].Lat);
+  console.log(markerData[1]);
 
   var markerArray = new Array();
 
   for(var i in markerData){
+
+    console.log(markerData[i]);
 
     var marker = new google.maps.Marker({
       position: {lat: markerData[i].Lat, lng: markerData[i].Lng},
