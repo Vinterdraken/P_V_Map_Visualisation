@@ -1,3 +1,5 @@
+
+
 function getData(){
   var markerData = new Array();
 
@@ -27,8 +29,7 @@ function getData(){
   return markerData;
 }
 
-
-function initMap() {
+/*function initMap() {
 
   var markerData = new Array();
   markerData = getData();
@@ -39,7 +40,7 @@ function initMap() {
     zoom: 11,
     center: smallIsles
   });
-/*
+
   var marker1 = new google.maps.Marker({
     position: {lat: markerData[0].positionLat, lng: markerData[0].positionLng},
     map: map
@@ -63,5 +64,20 @@ function initMap() {
   var marker5 = new google.maps.Marker({
     position: {lat: markerData[4].positionLat, lng: markerData[4].positionLng},
     map: map
-  });*/
+  });
 }
+*/
+
+$(document).ready(function(){
+
+  var markerData;
+  markerData = getData();
+
+  var smallIsles = {lat: 56.988553, lng: -6.451959};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    center: smallIsles
+  });
+
+})
