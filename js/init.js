@@ -30,9 +30,6 @@ function getData(){
 
 function initMap(){
 
-  var markerData = new Array();
-  //markerData = getData();
-
   var smallIsles = {lat: 56.988553, lng: -6.451959};
 
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -40,6 +37,9 @@ function initMap(){
     center: smallIsles
   });
 
+  var markerData = new Array();
+  markerData = getData();
+  
   var markerArray = new Array();
 
   for(var i in markerData){

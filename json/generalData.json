@@ -1,32 +1,32 @@
 {
 	"Data":[
 		{
-			"positionLat" : "57.029119", 
-			"positionLng" : "-6.616819", 
+			"positionLat" : 57.029119, 
+			"positionLng" : -6.616819, 
 			"burrowsAverage" : 4.8
 		},
 
 		{
-			"positionLat" : "57.020897", 
-			"positionLng" : "-6.622999", 
+			"positionLat" : 57.020897, 
+			"positionLng" : -6.622999, 
 			"burrowsAverage" : 1.5
 		},
 
 		{
-			"positionLat" : "57.011365", 
-			"positionLng" : "-6.629865", 
+			"positionLat" : 57.011365, 
+			"positionLng" : -6.629865, 
 			"burrowsAverage" : 31.833333333333332
 		},
 
 		{
-			"positionLat" : "56.999961", 
-			"positionLng" : "-6.638791", 
+			"positionLat" : 56.999961, 
+			"positionLng" : -6.638791, 
 			"burrowsAverage" : 2.75
 		},
 
 		{
-			"positionLat" : "56.989675", 
-			"positionLng" : "-6.649091", 
+			"positionLat" : 56.989675, 
+			"positionLng" : -6.649091, 
 			"burrowsAverage" : 2
 		}
 	]
