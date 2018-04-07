@@ -14,12 +14,13 @@ function getData(){
         var marker = { Lat: result.Data[i].positionLat, Lng: result.Data[i].positionLng, average: result.Data[i].burrowsAverage };
 
         markerData.push(marker);
+
+        console.log(markerData[0]);
       }
     }
   });
 
   console.log(markerData[0]);
-  console.log(markerData[0].Lat);
   
   return markerData;
 }
@@ -35,7 +36,6 @@ function initMap(){
 
   var markerData = new Array();
   markerData = getData();
-
 
   console.log(markerData);
 
