@@ -9,7 +9,7 @@ function getData(){
     dataType: "json",
     success: function(result){
 
-      console.log(result.Data[1]);
+      console.log(result.Data[1].positionLat);
 
       for(var i in result.Data){
         markerData.push({
