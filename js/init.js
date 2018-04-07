@@ -1,7 +1,8 @@
 
 
 function getData(){
-  var markerData = new Array();
+  var markerObjectArray = new Array();
+  var markersObject;
 
   $.ajax({
     type: "GET",
@@ -13,14 +14,13 @@ function getData(){
         
         var marker = { Lat: result.Data[i].positionLat, Lng: result.Data[i].positionLng, average: result.Data[i].burrowsAverage };
 
-        markerData.push(marker);
-
+        markerObjectArray.push(marker);
         
-      }
-      console.log(markerData[0]);
-      return markerData;
+      }     
     }
-  });  
+  });
+
+  return markerObjectArray;
 }
 
 function initMap(){
@@ -32,10 +32,12 @@ function initMap(){
     center: smallIsles
   });
 
-  var markerData = new Array();
+  /*var markerData;
   markerData = getData();
 
-  console.log(markerData);
+  console.log(markerData);*/
+
+  console.log(getData());
 
   var markerArray = new Array();
 
