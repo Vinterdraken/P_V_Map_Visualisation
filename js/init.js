@@ -12,18 +12,11 @@ function getData(){
       console.log(result.Data[1].positionLat);
 
       for(var i in result.Data){
-        markerData.push({
-        	positionLat: result.Data[i].positionLat, 
-        	positionLng: result.Data[i].positionLng, 
-        	average: result.Data[i].burrowsAverage
-        });
+        console.log(result.Data[i].positionLat);
       }
     }
   });
 
-  console.log(markerData[0].positionLat.value);
-  console.log(markerData[1].positionLng.value);
-  console.log(markerData[2].average.value);
   
   return markerData;
 }
