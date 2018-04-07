@@ -18,11 +18,11 @@ function getData(){
     }
   });
 
-  /*
+  
   console.log(markerData[0].positionLat);
   console.log(markerData[1].positionLng);
   console.log(markerData[2].average);
-  */
+  
 
   return markerData;
 }
@@ -31,7 +31,7 @@ function getData(){
 function initMap() {
 
   var markerData = new Array();
-  //markerData = getData();
+  markerData = getData();
 
   var smallIsles = {lat: 56.988553, lng: -6.451959};
 
